@@ -31,12 +31,21 @@
             
 
      </head>
-    <body>
+    <body onload="WelcomeFunction(); document.body.style.backgroundColor='pink'"
+          onresize="document.body.style.backgroundColor='lightblue
+                    
+          onkeydown="document.body.style.backgroundColor='white'"
+          onkeyup="document.body.style.backgroundColor='lightyellow'">
+         <script>
+            function WelcomeFfunction()   {
+                alert("Welocome!");                                                     
+               }
+         </script>
  <p>
     
        <strong> Introduction to Information Systems </strong>
 </p>
-<p class="centered">
+<p class="centered" onmouseover="document.querySelector('.centered').style.font='bold 20pt arial serif'">
 <em>
 Vedat Akgöz
 <br>
@@ -45,7 +54,7 @@ Vedat Akgöz
 </em>
 </p>
 <p> Evolution of Homo Species </p>
-<ul>
+<ul id="unorderedL" onmouseover="document.getElementById('unorderedL').style.backgroundColor='purple'">
    <li> Homo habilis (able man) </li>
    <li> Homo erectus (upright man) </li>
   <li> Homo neanderthalensis </li>
@@ -54,14 +63,15 @@ Vedat Akgöz
  <ul>
      <li>   Homo sapiens sapiens</li>
  </ul>
- <h1><strong>Human Evolution</strong></h1>
+ <h1 onmouseover="style.color='orange'; style.backgroundColor='lightgreen'"
+     onmouseover="style.color='red'; style.backgroundColor='white'"><strong>Human Evolution</strong></h1>
  <p> <img src="evolution-diagram.png"> </p>
  <p> You can find the link of the image below. 
   <a href= "https://www.biologyonline.com/dictionary/homo-sapiens-sapiens">Biology Online</a></p>
 <h2>The clickable image</h2>
  <p>The image is clickable click on it and try
    <a href="https://www.biologyonline.com/dictionary/homo-sapiens-sapiens">
-      <img src="evolution-diagram.png" alt="Human Evolution" >
+      <img id="myImg" alt="Human Evolution" src="evolution-diagram.png" onclick="alert(document.getElementById('myImg').alt)" >
     </a>
     
     <table >
